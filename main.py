@@ -26,7 +26,6 @@ audio_mime_type = config.get("audioMimeType", "audio/wav")
 host = config.get("host")
 port = config.get("port")
 
-
 # Load model
 model = ChatterboxTTS.from_pretrained(device=device)
 
