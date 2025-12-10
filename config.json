@@ -1,0 +1,9 @@
+{
+    "port": 8080,
+    "audioPrompt": "input.mp3",
+    "audioFormat": "wav",
+    "audioMimeType": "audio/wav",
+    "cfgWeight": 0.7,
+    "exaggeration": 0.8,
+    "temperature": 0.8
+}
