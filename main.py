@@ -17,6 +17,9 @@ if not device:
     else:
         device = "cpu"
 
+min_p = config.get("minP", 0.05)
+top_p = config.get("topP", 1)
+repetition_penalty = config.get("repetitionPenalty", 1.2)
 cfg_weight = config.get("cfg_weight", 0.5)
 exaggeration = config.get("exaggeration", 0.5)
 temperature = config.get("temperature", 0.8)
@@ -44,6 +47,9 @@ def text_to_speech(voice_id):
     generated = model.generate(
         text=text,
         audio_prompt_path=audio_prompt,
+        min_p=min_p,
+        top_p=top_p,
+        repetition_penalty=repetition_penalty,
         cfg_weight=cfg_weight,
         exaggeration=exaggeration,
         temperature=temperature
