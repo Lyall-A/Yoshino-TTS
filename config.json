@@ -1,12 +1,12 @@
 {
     "port": 8080,
-    "audioPrompt": "input.mp3",
+    "audioPrompt": "voices/Mommy ASMR.mp3",
     "audioFormat": "wav",
     "audioMimeType": "audio/wav",
     "minP": 0.05,
     "topP": 1,
     "repetitionPenalty": 1.2,
-    "cfgWeight": 0.7,
-    "exaggeration": 0.8,
+    "cfgWeight": 0.1,
+    "exaggeration": 0,
     "temperature": 0.8
 }
